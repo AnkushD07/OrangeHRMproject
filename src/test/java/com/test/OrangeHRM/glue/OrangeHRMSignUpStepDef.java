@@ -1,5 +1,7 @@
 package com.test.OrangeHRM.glue;
 
+import org.openqa.selenium.OutputType;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -40,7 +42,12 @@ public class OrangeHRMSignUpStepDef {
 	
 	@And ("click on I Am not Robot")
 	public void clickOnRobot() {
-		sh.signUpPage.clickOnIAmNotRobot();
+		try {
+			sh.signUpPage.clickOnIAmNotRobot();
+		}catch(Exception e) {
+			byte[] bScreen=sh.driver.getScreenshotAs(OutputType.BYTES);
+			sh.s.attach(bScreen, "image/png", "notclicked");
+		}
 	}
 	
 	@When ("click on Submit")

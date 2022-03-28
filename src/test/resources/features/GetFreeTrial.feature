@@ -14,4 +14,4 @@ Feature: OrangeHRM Trial
     And click on I Am not Robot
     When click on Submit
     Then "Thank you for signing up" page should displayed
-    And Author is Ankush Dongre
+    And Author is "Ankush Dongre"

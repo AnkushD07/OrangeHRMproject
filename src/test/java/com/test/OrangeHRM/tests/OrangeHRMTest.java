@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
+//class to redirect attachment of feature and glue
 @RunWith(Cucumber.class)
 @CucumberOptions(features ={"src//test//resources//features//GetFreeTrial.feature",
 							},
@@ -14,4 +15,3 @@ import io.cucumber.junit.CucumberOptions;
 public class OrangeHRMTest {
 
 }
-//"src//test//resources//features//RegOnOrangeHRM.feature"

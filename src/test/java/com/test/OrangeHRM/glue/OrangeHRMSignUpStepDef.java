@@ -60,4 +60,9 @@ public class OrangeHRMSignUpStepDef {
 		sh.s.log(sh.signUpPage.verifySignUp(msg)?"Signed Up successfully Test Passed"
 				:"Signed Up failed Test Failed");
 	}
+	
+	@And ("Author is {string}")
+	public void autonr_name(String name) {
+		
+	}
 }

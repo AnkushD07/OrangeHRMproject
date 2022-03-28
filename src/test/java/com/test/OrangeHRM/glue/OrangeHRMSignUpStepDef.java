@@ -63,6 +63,6 @@ public class OrangeHRMSignUpStepDef {
 	
 	@And ("Author is {string}")
 	public void autonr_name(String name) {
-		
+		System.out.println(name);
 	}
 }
